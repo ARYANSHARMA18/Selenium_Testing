@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="softwaretestingmaterial">
+    <test name="Test">
+
+<!--      TestActivity5  -->
+<!--       <groups>-->
+<!--            <run>-->
+<!--                <include name="HeaderTests"/>-->
+<!--                <include name="ButtonTests"/>-->
+<!--            </run>-->
+<!--       </groups>-->
+
+<!--        TestActivity6-->
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/>
+
+        <classes>
+            <class name="TestActivity2"/>
+            <class name="TestActivity3"/>
+            <class name="TestActivity5"/>
+            <class name="TestActivity6" />
+            <class name="TestActivity7"/>
+        </classes>
+
+    </test>
+</suite>
